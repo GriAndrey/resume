@@ -3,7 +3,7 @@ from .models import Task
 
 def index(request):
     tasks = Task.objects.all()
-    return render(request, 'main/index.html', {'title': 'Main PAGE', 'tasks': tasks})
+    return render(request, 'main/index.html', {'title': 'Резюме', 'tasks': tasks})
 
 
 def about(request):
